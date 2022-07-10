@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %} Home page {% endblock %}
+{% block head %}
+<style>
+.next {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+</style>
+{% endblock %}
+{% block content %} 
+<div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+        <h1 class="mb-3">WELCOME To FIINTA</h1>
+        <h4 class="mb-3">your personal voice assistant</h4>
+        <a class="btn btn-outline-light btn-lg" href="/call_action" role="button"><t>&ensp; Call to action</t></a>
+        </div>
+    </div>
+</div>
+<div class="next">
+    <h4 style="text-align:center;">Please select the mode </h4> 
+    <a href="/signup" class="btn btn-dark"><h4>Personal Mode</h4></a>
+    <a href="/generalassistant"  class="btn btn-dark"><h4>General Mode</h4></a>
+
+</div>
+
+{% endblock %}

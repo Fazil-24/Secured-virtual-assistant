@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block title %} General Mode {% endblock %}
+{% block head %}
+<style>
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+</style>    
+
+{% endblock%}
+
+{% block content %} 
+
+
+    <div class="center">
+        <a href="/exec5" class="btn btn-outline-danger"><h2>General Assistant Mode</h2></a>
+    </div>
+
+
+{% endblock %}
